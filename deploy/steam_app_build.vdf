@@ -1,0 +1,20 @@
+"AppBuild"
+{
+	"AppID" "YOUR_APP_ID"
+	"Desc" "Embers of the Earth - Release Build"
+	"ContentRoot" "."
+	"BuildOutput" "./output"
+	"Depots"
+	{
+		"YOUR_DEPOT_ID"
+		{
+			"FileMapping"
+			{
+				"LocalPath" "./builds/windows/*"
+				"DepotPath" "."
+				"Recursive" "1"
+			}
+		}
+	}
+}
+

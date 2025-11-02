@@ -1,0 +1,101 @@
+[gd_scene load_steps=2 format=3 uid="uid://character_creation"]
+
+[ext_resource type="Script" path="res://scripts/ui/CharacterCreation.gd" id="1_character_creation"]
+
+[node name="CharacterCreation" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_character_creation")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15, 0.1, 0.1, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -300.0
+offset_right = 400.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "BEGIN YOUR LEGACY"
+theme_override_font_sizes/font_size = 24
+
+[node name="NameSection" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="FirstNameInput" type="LineEdit" parent="VBoxContainer/NameSection"]
+layout_mode = 2
+placeholder_text = "First Name"
+
+[node name="FamilyNameInput" type="LineEdit" parent="VBoxContainer/NameSection"]
+layout_mode = 2
+placeholder_text = "Family Name"
+
+[node name="TraitSection" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Trait1Dropdown" type="OptionButton" parent="VBoxContainer/TraitSection"]
+layout_mode = 2
+
+[node name="Trait2Dropdown" type="OptionButton" parent="VBoxContainer/TraitSection"]
+layout_mode = 2
+
+[node name="OriginSection" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="OriginDropdown" type="OptionButton" parent="VBoxContainer/OriginSection"]
+layout_mode = 2
+
+[node name="HeirloomSection" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="HeirloomList" type="ItemList" parent="VBoxContainer/HeirloomSection"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 100)
+
+[node name="PortraitSection" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="PortraitPreview" type="TextureRect" parent="VBoxContainer/PortraitSection"]
+layout_mode = 2
+custom_minimum_size = Vector2(64, 64)
+texture_filter = 2
+
+[node name="InfoSection" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="CharacterInfo" type="RichTextLabel" parent="VBoxContainer/InfoSection"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 150)
+bbcode_enabled = true
+
+[node name="Buttons" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ConfirmButton" type="Button" parent="VBoxContainer/Buttons"]
+layout_mode = 2
+text = "Begin Your Legacy"
+
+[node name="CancelButton" type="Button" parent="VBoxContainer/Buttons"]
+layout_mode = 2
+text = "Cancel"
+

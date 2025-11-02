@@ -1,0 +1,12 @@
+[[actions]]
+channel = "windows"
+filename = "embers-v{version}-windows.zip"
+
+[[actions]]
+channel = "macos"
+filename = "embers-v{version}-macos.zip"
+
+[[actions]]
+channel = "linux"
+filename = "embers-v{version}-linux.zip"
+
