@@ -1,0 +1,65 @@
+[
+  {
+    "id": "bandits",
+    "name": "Desperate Bandits",
+    "weight": 6,
+    "description": "A group of armed scavengers blocks your path.",
+    "effects": {
+      "lose_items": ["grain", "metal_scrap"],
+      "injury": "cut",
+      "reputation_loss": 5
+    }
+  },
+  {
+    "id": "machine_beast",
+    "name": "Rogue Machine Beast",
+    "weight": 3,
+    "description": "A twisted mechanical creature stalks you.",
+    "effects": {
+      "damage": 15,
+      "lose_items": ["gear_scrap"],
+      "injury": "mechanic_burn"
+    }
+  },
+  {
+    "id": "safe_camp",
+    "name": "Abandoned Shelter",
+    "weight": 4,
+    "description": "You find a safe place to rest.",
+    "effects": {
+      "rest": true,
+      "heal_injury": true
+    }
+  },
+  {
+    "id": "dust_storm",
+    "name": "Sudden Dust Storm",
+    "weight": 5,
+    "description": "A violent dust storm forces you to take cover.",
+    "effects": {
+      "lose_days": 1,
+      "injury": "exhaustion"
+    }
+  },
+  {
+    "id": "merchant",
+    "name": "Wandering Merchant",
+    "weight": 2,
+    "description": "A traveling trader offers rare goods.",
+    "effects": {
+      "trade_opportunity": true,
+      "reputation_gain": 2
+    }
+  },
+  {
+    "id": "old_machine",
+    "name": "Ancient Mechanism",
+    "weight": 1,
+    "description": "You discover a half-buried machine from the old world.",
+    "effects": {
+      "gain_items": {"gear_blueprint": 1, "metal_scrap": 5},
+      "reputation_gain": 3
+    }
+  }
+]
+

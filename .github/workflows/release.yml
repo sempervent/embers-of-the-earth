@@ -1,0 +1,50 @@
+name: Release Build
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        include:
+          - os: ubuntu-latest
+            platform: linux
+            export_template: linux
+          - os: windows-latest
+            platform: windows
+            export_template: windows
+          - os: macos-latest
+            platform: macos
+            export_template: macos
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Godot
+        uses: firebelley/godot-export@v3.1.0
+        with:
+          godot_version: '4.2'
+          export_platform: ${{ matrix.export_template }}
+      
+      - name: Export Game
+        run: |
+          godot --headless --export "${{ matrix.export_template }}" "builds/${{ matrix.platform }}/EmbersOfTheEarth${{ matrix.platform == 'windows' && '.exe' || '' }}"
+      
+      - name: Create ZIP
+        shell: bash
+        run: |
+          cd builds/${{ matrix.platform }}
+          zip -r ../../embers-v${{ github.ref_name }}-${{ matrix.platform }}.zip .
+      
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: embers-v${{ github.ref_name }}-${{ matrix.platform }}
+          path: embers-v${{ github.ref_name }}-${{ matrix.platform }}.zip
+

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "keeper_of_ashlands",
+    "name": "Keeper of the Ashlands",
+    "description": "One who tends the dead earth with care.",
+    "requirements": {
+      "soilcraft": 50,
+      "harvest_count": 200,
+      "generation": 2
+    },
+    "effects": {
+      "soilcraft_bonus": 2,
+      "faction_opinions": {
+        "root_keepers": 5
+      }
+    }
+  },
+  {
+    "id": "breaker_of_oaths",
+    "name": "Breaker of Oaths",
+    "description": "Your name is whispered with shame.",
+    "requirements": {
+      "broken_contracts": 2,
+      "faction_opinion_negative": true
+    },
+    "effects": {
+      "diplomacy_penalty": -3,
+      "faction_opinions": {
+        "machinists": -10,
+        "rusted_brotherhood": -15
+      }
+    }
+  },
+  {
+    "id": "soil_walker",
+    "name": "Soil-Walker",
+    "description": "One who understands the land's memory.",
+    "requirements": {
+      "soilcraft": 40,
+      "soil_memory_interactions": 50,
+      "years_active": 10
+    },
+    "effects": {
+      "soil_mood_bonus": 0.1,
+      "crop_yield_bonus": 0.1
+    }
+  },
+  {
+    "id": "machinas_chosen",
+    "name": "Machina's Chosen",
+    "description": "The machine-god favors you.",
+    "requirements": {
+      "mechanica": 60,
+      "order_entropy": 50,
+      "machine_events": 3
+    },
+    "effects": {
+      "mechanica_bonus": 3,
+      "faction_opinions": {
+        "machinists": 10
+      },
+      "machine_affinity": 0.1
+    }
+  },
+  {
+    "id": "iron_harvester",
+    "name": "Iron Harvester",
+    "description": "Master of biomechanical crops.",
+    "requirements": {
+      "harvest_biomechanical": 500,
+      "soilcraft": 45
+    },
+    "effects": {
+      "crop_yield_bonus": 0.15,
+      "biomechanical_affinity": 0.2
+    }
+  },
+  {
+    "id": "bridge_builder",
+    "name": "Bridge Builder",
+    "description": "One who connects factions through marriage and trade.",
+    "requirements": {
+      "marriages": 3,
+      "diplomacy": 50,
+      "faction_relations": 2
+    },
+    "effects": {
+      "diplomacy_bonus": 2,
+      "marriage_benefits": 0.1
+    }
+  },
+  {
+    "id": "wasteland_survivor",
+    "name": "Wasteland Survivor",
+    "description": "Traveled far and lived through hardship.",
+    "requirements": {
+      "travel_distance": 500,
+      "vigor": 40,
+      "survived_hazards": 10
+    },
+    "effects": {
+      "vigor_bonus": 2,
+      "travel_risk_reduction": 0.15
+    }
+  }
+]
+

@@ -1,0 +1,25 @@
+[
+  {
+    "title": "First Winter Letter",
+    "scene": "candlelit_farmhouse",
+    "text": [
+    "The candle flickers in the dark. Your hands—calloused, young—hold a letter. The last words of the First Farmer.",
+    "",
+    "'To whoever reads this:",
+    "",
+    "The earth remembers. Every seed planted, every harvest taken. The machine-god sleeps beneath, but the soil holds our history.'",
+    "",
+    "The letter is soil-stained. The ink has faded, but the words remain.",
+    "",
+    "'Tend it well. Your bloodline is your legacy. Your choices echo through generations.'",
+    "",
+    "You fold the letter carefully. Outside, the wind howls. Spring will come. The soil waits.",
+    "",
+    "Your bloodline rises... or ends with you."
+  ],
+    "narration_speed": 2.0,
+    "fade_out_duration": 3.0,
+    "next_scene": "farm"
+  }
+]
+

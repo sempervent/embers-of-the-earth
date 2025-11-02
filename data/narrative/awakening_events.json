@@ -1,0 +1,75 @@
+[
+  {
+    "id": "steam_surge",
+    "path": "order",
+    "threshold": 25,
+    "name": "Steam Surge",
+    "description": "The machine-god stirs. Steam vents erupt across the farm.",
+    "effects": {
+      "spawn_steam_vents": 3,
+      "weather": "steam_fog",
+      "music_layer": "harmonium"
+    }
+  },
+  {
+    "id": "iron_blight",
+    "path": "order",
+    "threshold": 50,
+    "name": "Iron Blight",
+    "description": "Metal spreads like a disease. Soil turns to iron.",
+    "effects": {
+      "transform_soil": "ferro_soil",
+      "crop_damage": 20,
+      "weather": "static_storm"
+    }
+  },
+  {
+    "id": "machine_awakening",
+    "path": "order",
+    "threshold": 75,
+    "name": "The Machine-God Awakens",
+    "description": "The great machine beneath stirs. Order triumphs.",
+    "effects": {
+      "ending": "order",
+      "transform_all_soil": "ferro_soil",
+      "music_layer": "brass"
+    }
+  },
+  {
+    "id": "root_bloom",
+    "path": "wild",
+    "threshold": 25,
+    "name": "Root Bloom",
+    "description": "Nature fights back. Vines crack through metal.",
+    "effects": {
+      "spawn_fungal_growth": 3,
+      "weather": "dry_wind",
+      "music_layer": "violin"
+    }
+  },
+  {
+    "id": "wild_reclamation",
+    "path": "wild",
+    "threshold": 50,
+    "name": "Wild Reclamation",
+    "description": "The earth rejects machinery. Bio-soil spreads.",
+    "effects": {
+      "transform_soil": "pure_bio_soil",
+      "building_damage": 30,
+      "weather": "ash_fall"
+    }
+  },
+  {
+    "id": "nature_triumph",
+    "path": "wild",
+    "threshold": 75,
+    "name": "Nature's Triumph",
+    "description": "The wild consumes all. Nature reigns supreme.",
+    "effects": {
+      "ending": "wild",
+      "transform_all_soil": "pure_bio_soil",
+      "music_layer": "banjo"
+    }
+  }
+]
+

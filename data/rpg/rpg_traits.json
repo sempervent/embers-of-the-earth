@@ -1,0 +1,184 @@
+[
+  {
+    "name": "ironblood",
+    "display_name": "Ironblood",
+    "category": "blessing",
+    "description": "Your bloodline flows with metal and steam. Machines sing in your presence.",
+    "stat_modifiers": {
+      "mechanica": 5,
+      "resolve": 2
+    },
+    "world_impact": {
+      "faction_opinions": {
+        "machinists": 10,
+        "rusted_brotherhood": 5,
+        "root_keepers": -10,
+        "ash_caravans": 0
+      },
+      "soil_affinity": {
+        "ferro_soil": 0.2,
+        "scrap_heap": 0.15,
+        "pure_bio_soil": -0.2
+      },
+      "machine_affinity": 0.3
+    },
+    "color": "#8B4513"
+  },
+  {
+    "name": "soilbound",
+    "display_name": "Soilbound",
+    "category": "blessing",
+    "description": "The earth speaks to you. Crops yield more under your care, but machines falter.",
+    "stat_modifiers": {
+      "soilcraft": 5,
+      "diplomacy": 1
+    },
+    "world_impact": {
+      "faction_opinions": {
+        "root_keepers": 15,
+        "ash_caravans": 5,
+        "machinists": -10,
+        "rusted_brotherhood": -5
+      },
+      "soil_affinity": {
+        "pure_bio_soil": 0.25,
+        "fungal_soil": 0.15,
+        "ferro_soil": -0.15,
+        "scrap_heap": -0.25
+      },
+      "nature_affinity": 0.3,
+      "crop_yield_bonus": 0.15
+    },
+    "color": "#556B2F"
+  },
+  {
+    "name": "oathbreaker_heir",
+    "display_name": "Oathbreaker Heir",
+    "category": "flaw",
+    "description": "Your grandfather broke a sacred contract. The shame follows your bloodline.",
+    "stat_modifiers": {
+      "diplomacy": -3,
+      "resolve": -2
+    },
+    "world_impact": {
+      "faction_opinions": {
+        "machinists": -15,
+        "rusted_brotherhood": -20,
+        "root_keepers": -10,
+        "ash_caravans": -5
+      },
+      "starts_with_shame_heirloom": true,
+      "npc_memory_penalty": -20
+    },
+    "color": "#8B0000"
+  },
+  {
+    "name": "exiled_refugees",
+    "display_name": "Exiled Refugees",
+    "category": "origin",
+    "description": "Your family fled their homeland. You start with nothing but determination.",
+    "stat_modifiers": {
+      "resolve": 5,
+      "vigor": 3,
+      "soilcraft": -2
+    },
+    "world_impact": {
+      "faction_opinions": {
+        "ash_caravans": 10,
+        "root_keepers": 5,
+        "machinists": -5,
+        "rusted_brotherhood": -10
+      },
+      "starting_items_reduced": true,
+      "diplomacy_bonus": 2
+    },
+    "color": "#696969"
+  },
+  {
+    "name": "machine_aligned",
+    "display_name": "Machine-Aligned",
+    "category": "origin",
+    "description": "Raised by the Brass Guild. Steam and gears are your birthright.",
+    "stat_modifiers": {
+      "mechanica": 4,
+      "resolve": 1
+    },
+    "world_impact": {
+      "faction_opinions": {
+        "machinists": 20,
+        "rusted_brotherhood": 10,
+        "root_keepers": -15
+      },
+      "starting_items": {
+        "gear_blueprint": 2,
+        "bolts": 10
+      }
+    },
+    "color": "#CD7F32"
+  },
+  {
+    "name": "nature_aligned",
+    "display_name": "Nature-Aligned",
+    "category": "origin",
+    "description": "Raised by the Root Keepers. The old ways guide your hand.",
+    "stat_modifiers": {
+      "soilcraft": 4,
+      "diplomacy": 2
+    },
+    "world_impact": {
+      "faction_opinions": {
+        "root_keepers": 20,
+        "ash_caravans": 10,
+        "machinists": -15,
+        "rusted_brotherhood": -15
+      },
+      "starting_items": {
+        "bio_seeds": 5,
+        "organic_fertilizer": 3
+      }
+    },
+    "color": "#2F4F2F"
+  },
+  {
+    "name": "ash_walker",
+    "display_name": "Ash Walker",
+    "category": "blessing",
+    "description": "You see beauty in desolation. The wasteland is your home.",
+    "stat_modifiers": {
+      "vigor": 4,
+      "resolve": 3
+    },
+    "world_impact": {
+      "faction_opinions": {
+        "ash_caravans": 15,
+        "rusted_brotherhood": 5,
+        "root_keepers": -5
+      },
+      "travel_risk_reduction": 0.2,
+      "weather_resistance": true
+    },
+    "color": "#8B7355"
+  },
+  {
+    "name": "cursed_lineage",
+    "display_name": "Cursed Lineage",
+    "category": "flaw",
+    "description": "Misfortune follows your family. Others fear to get close.",
+    "stat_modifiers": {
+      "resolve": 3,
+      "diplomacy": -4
+    },
+    "world_impact": {
+      "faction_opinions": {
+        "machinists": -10,
+        "root_keepers": -10,
+        "rusted_brotherhood": -10,
+        "ash_caravans": -10
+      },
+      "encounter_rate_increase": 0.2,
+      "npc_opinion_penalty": -10
+    },
+    "color": "#4B0082"
+  }
+]
+

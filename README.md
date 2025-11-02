@@ -1,205 +1,214 @@
-# Project Template
+# Embers of the Earth
 
-A clean, stack-agnostic GitHub template repository with MkDocs (Material theme) for documentation, automatic GitHub Pages deployment, and quality-of-life defaults.
+A post-apocalyptic steampunk farming sim with generational bloodlines, biomechanical crops, soil memory, and travel to nearby settlements for trade and arranged marriages.
+
+## Overview
+
+**Embers of the Earth** is a pixel-art game built with Godot 4.x that combines farming simulation with generational gameplay. Manage your farm across multiple generations, tend to biomechanical crops that remember their past, and negotiate with factions through trade and marriage alliances.
 
 ## Features
 
-- 📚 **MkDocs with Material theme** - Modern, responsive documentation
-- 🚀 **GitHub Pages deployment** - Automatic deployment via GitHub Actions
-- 🔧 **Pre-commit hooks** - Keep the repo clean with automated checks
-  - YAML/JSON linting, markdown formatting, Python docstring checks
-  - Conventional commits enforcement with Commitizen
-- ✨ **Conventional Commits** - Structured commit messages with Commitizen
-- 🤖 **Dependabot** - Automated dependency updates for Actions and Docker
-- 📝 **Issue templates** - Structured bug reports and feature requests
-- 🐳 **Docker support** - Dockerized local docs for tool-agnostic teams
-- ⚙️ **Makefile** - Simple commands for common tasks
-- 🔍 **CI Workflows** - Automated linting and validation on every PR
+### Core Systems
 
-## Using this template
+- **Soil & Tile System** - Each tile stores soil type, memory of past crops, and affinity for machine vs nature
+- **Biomechanical Crops** - Plants that require metal, steam, and mechanical parts to grow
+- **Soil Memory** - Tiles remember what was planted and how they were used, affecting future yields
+- **Generational Bloodlines** - Players age and die, passing control to their children
+- **Settlement Travel** - Visit nearby settlements for trade and arranged marriages
+- **Faction Diplomacy** - Form alliances through marriage contracts
 
-1. Click **Use this template** → **Create a new repository**.
+### Current Build Status
 
-2. Edit `mkdocs.yml` (update `site_name`, `repo_url`, `site_url`, and `repo_name`) and the pages under `docs/`.
+✅ **Implemented:**
+- Tile-based farm scene with player movement
+- Tilling, planting, and harvesting mechanics
+- Soil memory system that tracks crop history
+- Player aging and death system
+- Basic UI (inventory, date, player age)
+- JSON data loaders for crops, soil types, factions, and traits
+- Save/load game system
 
-3. Configure GitHub Pages:
-   - Go to **Settings** → **Pages**
-   - Under **Build and deployment**, select **Source: GitHub Actions**
-   - After the first push to `main`, your site will auto-deploy
-
-4. Push to `main`. GitHub Pages will auto-deploy via Actions.
-
-5. Install development tools (optional but recommended):
-
-   ```bash
-   # Install pre-commit (for hooks)
-   pip install pre-commit
-   make install-hooks
-
-   # Install Commitizen (for conventional commits and versioning)
-   pip install commitizen
-   # Or with pipx
-   pipx install commitizen
-   ```
-
-6. Local preview:
-
-   ```bash
-   # Option A: pipx (recommended)
-   pipx install mkdocs-material
-   mkdocs serve
-   
-   # Option B: pip
-   python -m pip install --upgrade pip
-   pip install mkdocs mkdocs-material
-   mkdocs serve
-   
-   # Option C: Docker
-   docker build -t mkdocs-local -f Dockerfile.docs .
-   docker run --rm -it -p 8000:8000 -v "$PWD":/site mkdocs-local
-   ```
-
-## Quick Start Commands
-
-```bash
-# Build documentation
-make docs
-
-# Start local development server
-make dev
-
-# Run pre-commit checks
-make check
-
-# Install pre-commit hooks (run once)
-make install-hooks
-
-# Commit using conventional commits (interactive)
-make commit
-
-# Bump version (creates tag and updates CHANGELOG)
-make version
-
-# Generate changelog from commits
-make changelog
-```
-
-## Quality of Life Features
-
-### Conventional Commits with Commitizen
-
-This template includes [Commitizen](https://commitizen-tools.readthedocs.io/) for enforcing conventional commits:
-
-```bash
-# Use the interactive commit helper
-make commit
-
-# Or install the hook to enforce on every commit
-make install-hooks
-```
-
-Commit types follow [Conventional Commits](https://www.conventionalcommits.org/):
-- `feat`: A new feature
-- `fix`: A bug fix
-- `docs`: Documentation only changes
-- `style`: Code style changes (formatting, etc.)
-- `refactor`: Code refactoring
-- `perf`: Performance improvements
-- `test`: Adding or updating tests
-- `build`: Build system changes
-- `ci`: CI configuration changes
-- `chore`: Other changes
-
-### Pre-commit Hooks
-
-Automatic checks run before commits:
-- ✅ YAML/JSON validation and linting
-- ✅ Markdown linting and formatting
-- ✅ Python docstring style checks (Google convention)
-- ✅ Conventional commit message validation
-- ✅ Large file detection
-- ✅ Private key detection
-- ✅ Merge conflict detection
-
-Install hooks:
-```bash
-make install-hooks
-```
-
-### Automated Version Management
-
-Bump versions and generate changelogs automatically:
-
-```bash
-# Bump version (patch/minor/major based on commits)
-make version
-
-# Generate CHANGELOG.md from commit history
-make changelog
-```
-
-### Dependabot
-
-Automatically keep dependencies updated:
-- ✅ GitHub Actions updates (weekly)
-- ✅ Docker image updates (weekly)
-- ✅ Python dependencies (when added - uncomment in `.github/dependabot.yml`)
-
-### CI/CD Workflows
-
-- **`docs-lint.yml`**: Lints markdown files and validates MkDocs config on PRs
-- **`pre-commit.yml`**: Runs full pre-commit checks in CI
-- **`pages.yml`**: Builds and deploys documentation to GitHub Pages
+🚧 **Planned:**
+- Travel system to settlements
+- Marriage and family generation UI
+- Trading system
+- Overworld map
+- Weather and machine-god systems
+- Pixel art assets
 
 ## Project Structure
 
 ```
-project-template/
-├── docs/                    # Documentation source files
-│   ├── index.md
-│   └── getting-started.md
-├── .github/
-│   ├── workflows/
-│   │   ├── pages.yml       # GitHub Pages deployment workflow
-│   │   ├── docs-lint.yml   # Documentation linting workflow
-│   │   └── pre-commit.yml  # Pre-commit checks in CI
-│   ├── ISSUE_TEMPLATE/      # Issue templates
-│   ├── CODEOWNERS          # Code ownership rules
-│   └── dependabot.yml      # Dependabot configuration
-├── .pre-commit-config.yaml  # Pre-commit hooks configuration
-├── .cz.toml                # Commitizen configuration
-├── .markdownlint.json      # Markdown linting rules
-├── mkdocs.yml             # MkDocs configuration
-├── Makefile                 # Common tasks
-├── Dockerfile.docs         # Docker image for local docs
-├── .editorconfig          # Editor configuration
-├── .gitignore             # Git ignore rules
-├── CHANGELOG.md           # Auto-generated changelog
-├── LICENSE                # MIT License
-└── README.md              # This file
+embers-of-the-earth/
+├── assets/          # Sprites, tiles, UI, sounds
+│   ├── sprites/
+│   ├── tiles/
+│   ├── ui/
+│   └── sounds/
+├── scripts/         # Game logic
+│   ├── Tile.gd             # Soil and memory system
+│   ├── Crop.gd          # Crop definitions
+│   ├── Player.gd            # Player character with aging
+│   ├── GameManager.gd      # Main game state manager
+│   ├── FarmGrid.gd         # Farm grid management
+│   ├── PlayerController.gd # Player movement and interaction
+│   ├── GameUI.gd           # UI controller
+│   ├── FarmScene.gd        # Main farm scene
+│   └── DataLoader.gd       # JSON file loader utility
+├── scenes/          # Godot scenes
+│   └── farm.tscn          # Main farm scene
+├── data/            # JSON data files
+│   ├── crops.json         # Crop definitions
+│   ├── soil_types.json    # Soil type definitions
+│   ├── factions.json      # Faction data
+│   └── traits.json        # Character traits
+└── project.godot    # Godot project configuration
 ```
 
-## Customization
+## Getting Started
 
-### Adding More Documentation Pages
+### Requirements
 
-1. Create new `.md` files in the `docs/` directory
-2. Add them to the `nav` section in `mkdocs.yml`
+- **Godot 4.2+** (or compatible version)
+- **Platform:** Windows, macOS, or Linux
 
-### Adding Language-Specific Files
+### Installation
 
-This template is intentionally stack-agnostic. You can add language-specific files after creating a repo from the template:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/embers-of-the-earth.git
+   cd embers-of-the-earth
+   ```
 
-- **Python**: Add `requirements.txt`, `setup.py`, or `pyproject.toml`
-- **Node.js**: Add `package.json`, `package-lock.json`
-- **Rust**: Add `Cargo.toml`
-- etc.
+2. Open the project in Godot:
+   - Launch Godot 4.2+
+   - Click "Import" or "Open"
+   - Navigate to the project folder and select `project.godot`
 
-### Versioned Documentation
+3. Run the game:
+   - Press F5 or click the Play button
+   - The main farm scene will load
 
-To add versioning to your documentation later, consider using the [mike](https://github.com/jimporter/mike) plugin for MkDocs.
+### Controls
+
+- **Arrow Keys / WASD** - Move player character
+- **E** - Interact with tile (till, plant, harvest)
+- **Advance Day Button** - Progress time by one day
+
+### Gameplay Basics
+
+1. **Farming:**
+   - Move to a tile and press E to till soil
+   - Till soil first, then plant a crop
+   - Crops grow over multiple days
+   - Harvest when crops reach full maturity
+
+2. **Soil Types:**
+   - **Ferro Soil** - Best for biomechanical crops
+   - **Fungal Soil** - Favors biological growth
+   - **Ash Soil** - Neutral, accepts both types
+   - **Pure Bio Soil** - Rejects mechanical crops
+   - **Scrap Heap** - Piles of machinery, hardest biomechanical crops only
+
+3. **Crops:**
+   - **Ironwheat** - Yields grain and metal scrap (5 stages, 3 days each)
+   - **Steamroot** - Yields root vegetable and steam crystals (4 stages, 4 days each)
+   - **Cogbean** - Yields beans and gear scrap (3 stages, 2 days each)
+   - **Rustmoss** - Slow-growing, consumes metal (6 stages, 5 days each)
+
+4. **Player Aging:**
+   - Players age one year per 120 days (1 game year)
+   - Death probability increases with age
+   - When you die, control transfers to a child (if available)
+
+## Data Files
+
+All game data is stored in JSON files in the `/data` directory:
+
+### `crops.json`
+Defines crop types, growth stages, requirements, and outputs.
+
+### `soil_types.json`
+Defines soil types with machine/nature affinity values.
+
+### `factions.json`
+Faction definitions with offers, requirements, and marriage benefits.
+
+### `traits.json`
+Character traits that modify player stats.
+
+## Development
+
+### Adding New Crops
+
+Edit `data/crops.json` and add a new crop definition:
+
+```json
+{
+  "name": "NewCrop",
+  "growth_stages": 4,
+  "requires": ["water", "sunlight"],
+  "output": ["item1", "item2"],
+  "likes": ["ferro_soil"],
+  "hates": ["pure_bio_soil"],
+  "days_per_stage": 3,
+  "biomechanical": true,
+  "description": "A new crop type"
+}
+```
+
+### Adding New Soil Types
+
+Edit `data/soil_types.json` and add a new soil definition:
+
+```json
+{
+  "name": "new_soil",
+  "display_name": "New Soil",
+  "machine_affinity_base": 0.5,
+  "nature_affinity_base": 0.5,
+  "description": "Description of the soil",
+  "color": "#HEXCOLOR"
+}
+```
+
+### Customization
+
+The game is designed to be easily customizable through JSON data files. Modify the data files to add new content without changing code.
+
+## Style & Atmosphere
+
+- **Art Style:** Pixel art (16x16 or 32x32 tiles)
+- **Color Palette:** Muted copper, orange, ash tones
+- **Atmosphere:** Slightly dying, rusting, post-apocalyptic steampunk
+- **UI:** Brass frames, cracked metal textures
+- **No bright colors** - Everything has a worn, weathered feel
+
+## Roadmap
+
+- [ ] Travel system to settlements
+- [ ] Marriage and family generation UI
+- [ ] Trading system with factions
+- [ ] Overworld map generation
+- [ ] Weather and machine-god events
+- [ ] NPC interaction system
+- [ ] Pixel art assets
+- [ ] Sound effects and ambient music
+- [ ] Advanced soil memory mechanics
+- [ ] Faction reputation system
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit pull requests or open issues for bugs and feature requests.
 
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
+## Acknowledgments
+
+Built with [Godot Engine](https://godotengine.org/)
+
+---
+
+*In the ashes of the old world, new life grows. Tend your fields, build your bloodline, and remember: the soil never forgets.*

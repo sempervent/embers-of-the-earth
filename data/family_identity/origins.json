@@ -1,0 +1,35 @@
+[
+  {
+    "id": "machine_aligned",
+    "name": "Machine-Aligned",
+    "description": "Raised by the Brass Guild. Steam and gears are your birthright.",
+    "crest_elements": ["gear", "flame", "steel"],
+    "motto": "Steel Endures",
+    "starting_faction": "machinists"
+  },
+  {
+    "id": "nature_aligned",
+    "name": "Nature-Aligned",
+    "description": "Raised by the Root Keepers. The old ways guide your hand.",
+    "crest_elements": ["root", "leaf", "vine"],
+    "motto": "Life Persists",
+    "starting_faction": "root_keepers"
+  },
+  {
+    "id": "exiled_refugees",
+    "name": "Exiled Refugees",
+    "description": "Your family fled their homeland. You start with nothing but determination.",
+    "crest_elements": ["road", "star", "ash"],
+    "motto": "We Endure",
+    "starting_faction": "ash_caravans"
+  },
+  {
+    "id": "neutral_farmers",
+    "name": "Neutral Farmers",
+    "description": "Simple farmers who survived the fall. No allegiance but to the land.",
+    "crest_elements": ["wheat", "soil", "sun"],
+    "motto": "The Earth Remembers",
+    "starting_faction": "neutral"
+  }
+]
+

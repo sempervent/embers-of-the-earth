@@ -1,0 +1,51 @@
+[
+  {
+    "id": "home_farm",
+    "name": "Coalroot Farm",
+    "type": "farm",
+    "position": {"x": 0, "y": 0},
+    "connections": ["brassford", "ash_caravan"],
+    "description": "Your ancestral farmstead"
+  },
+  {
+    "id": "brassford",
+    "name": "Brassford Settlement",
+    "type": "settlement",
+    "position": {"x": 5, "y": 2},
+    "connections": ["home_farm", "rust_gate"],
+    "description": "A fortified trading post controlled by the Brass Guild"
+  },
+  {
+    "id": "ash_caravan",
+    "name": "Ash Caravan Camp",
+    "type": "settlement",
+    "position": {"x": -3, "y": 4},
+    "connections": ["home_farm", "root_keepers"],
+    "description": "Nomadic traders who move with the seasons"
+  },
+  {
+    "id": "rust_gate",
+    "name": "Rust Gate",
+    "type": "settlement",
+    "position": {"x": 8, "y": 5},
+    "connections": ["brassford", "scrap_heap"],
+    "description": "A military outpost of the Rusted Brotherhood"
+  },
+  {
+    "id": "root_keepers",
+    "name": "Root Keepers' Grove",
+    "type": "settlement",
+    "position": {"x": -5, "y": 6},
+    "connections": ["ash_caravan"],
+    "description": "Hidden settlement of those who preserve nature"
+  },
+  {
+    "id": "scrap_heap",
+    "name": "The Scrap Heap",
+    "type": "landmark",
+    "position": {"x": 12, "y": 8},
+    "connections": ["rust_gate"],
+    "description": "A massive junkyard where the machine-god sleeps"
+  }
+]
+

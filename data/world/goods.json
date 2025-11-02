@@ -1,0 +1,87 @@
+[
+  {
+    "id": "ironwheat",
+    "name": "Ironwheat",
+    "category": "crop",
+    "description": "A hardy biomechanical crop"
+  },
+  {
+    "id": "bolts",
+    "name": "Bolts",
+    "category": "crafted",
+    "description": "Metal fasteners for machinery"
+  },
+  {
+    "id": "gear_blueprint",
+    "name": "Gear Blueprint",
+    "category": "schematic",
+    "description": "Technical drawings for gear construction"
+  },
+  {
+    "id": "steam_crystal",
+    "name": "Steam Crystal",
+    "category": "resource",
+    "description": "Crystallized steam energy"
+  },
+  {
+    "id": "food",
+    "name": "Food Rations",
+    "category": "consumable",
+    "description": "Preserved food for travel"
+  },
+  {
+    "id": "fuel",
+    "name": "Fuel",
+    "category": "consumable",
+    "description": "Combustible material for machinery"
+  },
+  {
+    "id": "provisions",
+    "name": "Travel Provisions",
+    "category": "consumable",
+    "description": "Essential supplies for long journeys"
+  },
+  {
+    "id": "travel_maps",
+    "name": "Travel Maps",
+    "category": "tool",
+    "description": "Detailed maps of the wasteland"
+  },
+  {
+    "id": "weapons",
+    "name": "Weapons",
+    "category": "equipment",
+    "description": "Crude but effective weapons"
+  },
+  {
+    "id": "armor",
+    "name": "Armor",
+    "category": "equipment",
+    "description": "Protective gear"
+  },
+  {
+    "id": "security_contracts",
+    "name": "Security Contracts",
+    "category": "service",
+    "description": "Hire protection for your farm"
+  },
+  {
+    "id": "bio_seeds",
+    "name": "Bio Seeds",
+    "category": "seed",
+    "description": "Pure biological crop seeds"
+  },
+  {
+    "id": "healing_herbs",
+    "name": "Healing Herbs",
+    "category": "consumable",
+    "description": "Natural remedies for injuries"
+  },
+  {
+    "id": "organic_fertilizer",
+    "name": "Organic Fertilizer",
+    "category": "consumable",
+    "description": "Natural soil enhancer"
+  }
+]
+

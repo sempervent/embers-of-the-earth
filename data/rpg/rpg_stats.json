@@ -1,0 +1,72 @@
+{
+  "stats": {
+    "resolve": {
+      "display_name": "Resolve",
+      "description": "Mental fortitude. Affects hazard choices, negotiation, and survival of hardships.",
+      "base_value": 10,
+      "max_value": 100,
+      "inheritance_factor": 0.7
+    },
+    "mechanica": {
+      "display_name": "Mechanica",
+      "description": "Efficiency with machines and production. Repair and building skills.",
+      "base_value": 10,
+      "max_value": 100,
+      "inheritance_factor": 0.6
+    },
+    "soilcraft": {
+      "display_name": "Soilcraft",
+      "description": "Crop yield and soil mood management. Understanding of the land.",
+      "base_value": 10,
+      "max_value": 100,
+      "inheritance_factor": 0.8
+    },
+    "diplomacy": {
+      "display_name": "Diplomacy",
+      "description": "Marriage deal quality, faction reputation, negotiation success.",
+      "base_value": 10,
+      "max_value": 100,
+      "inheritance_factor": 0.7
+    },
+    "vigor": {
+      "display_name": "Vigor",
+      "description": "Stamina, illness resistance, travel risk reduction.",
+      "base_value": 10,
+      "max_value": 100,
+      "inheritance_factor": 0.75
+    }
+  },
+  "progression": {
+    "harvest_crops": {
+      "stat": "soilcraft",
+      "amount": 1,
+      "threshold": 50,
+      "description": "Harvest 50 crops to improve Soilcraft"
+    },
+    "repair_machines": {
+      "stat": "mechanica",
+      "amount": 1,
+      "threshold": 10,
+      "description": "Repair 10 machines to improve Mechanica"
+    },
+    "complete_trades": {
+      "stat": "diplomacy",
+      "amount": 1,
+      "threshold": 20,
+      "description": "Complete 20 trades to improve Diplomacy"
+    },
+    "survive_winter": {
+      "stat": "resolve",
+      "amount": 2,
+      "threshold": 1,
+      "description": "Survive a winter famine to improve Resolve"
+    },
+    "travel_distance": {
+      "stat": "vigor",
+      "amount": 1,
+      "threshold": 100,
+      "description": "Travel 100 distance units to improve Vigor"
+    }
+  }
+}
+

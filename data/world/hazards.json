@@ -1,0 +1,158 @@
+[
+  {
+    "id": "bandits_road",
+    "name": "Bandit Ambush",
+    "description": "Desperate scavengers block your path, weapons drawn.",
+    "choices": [
+      {
+        "id": "fight",
+        "name": "Fight",
+        "requires": {"traits": ["strong"], "items": {"weapons": 1}},
+        "success_chance": 0.7,
+        "success": {"reputation_gain": 5, "gain_items": {"metal_scrap": 3}},
+        "failure": {"lose_items": ["grain", "metal_scrap"], "injury": "cut"}
+      },
+      {
+        "id": "barter",
+        "name": "Offer Trade",
+        "requires": {"items": {"grain": 5}},
+        "success_chance": 0.9,
+        "success": {"lose_items": {"grain": 5}, "reputation_gain": 2},
+        "failure": {"lose_items": {"grain": 5, "metal_scrap": 3}}
+      },
+      {
+        "id": "retreat",
+        "name": "Retreat",
+        "requires": {},
+        "success_chance": 1.0,
+        "success": {"lose_days": 1, "injury": "exhaustion"},
+        "failure": {}
+      }
+    ]
+  },
+  {
+    "id": "machine_beast",
+    "name": "Rogue Machine Beast",
+    "description": "A twisted mechanical creature stalks you, gears grinding.",
+    "choices": [
+      {
+        "id": "fight",
+        "name": "Fight",
+        "requires": {"traits": ["mechanically_gifted"], "items": {"weapons": 1}},
+        "success_chance": 0.6,
+        "success": {"gain_items": {"gear_scrap": 10}, "reputation_gain": 5},
+        "failure": {"injury": "mechanic_burn", "damage": 20}
+      },
+      {
+        "id": "repair",
+        "name": "Attempt Repair",
+        "requires": {"traits": ["mechanically_gifted"], "items": {"gear_scrap": 5}},
+        "success_chance": 0.8,
+        "success": {"lose_items": {"gear_scrap": 5}, "gain_items": {"gear_blueprint": 1}},
+        "failure": {"lose_items": {"gear_scrap": 5}, "injury": "mechanic_burn"}
+      },
+      {
+        "id": "flee",
+        "name": "Flee",
+        "requires": {"traits": ["wanderer"]},
+        "success_chance": 0.9,
+        "success": {"lose_days": 1},
+        "failure": {"injury": "mechanic_burn", "lose_items": {"gear_scrap": 2}}
+      }
+    ]
+  },
+  {
+    "id": "storm_road",
+    "name": "Violent Storm",
+    "description": "A dust storm forces you to take cover. Metal scraps fly through the air.",
+    "choices": [
+      {
+        "id": "wait",
+        "name": "Wait It Out",
+        "requires": {"items": {"provisions": 2}},
+        "success_chance": 1.0,
+        "success": {"lose_items": {"provisions": 2}, "lose_days": 2},
+        "failure": {}
+      },
+      {
+        "id": "press_on",
+        "name": "Press On",
+        "requires": {"traits": ["strong", "resilient"]},
+        "success_chance": 0.5,
+        "success": {"lose_days": 1, "injury": "exhaustion"},
+        "failure": {"injury": "exhaustion", "lose_items": {"provisions": 3}}
+      },
+      {
+        "id": "find_shelter",
+        "name": "Find Shelter",
+        "requires": {"traits": ["wanderer"]},
+        "success_chance": 0.8,
+        "success": {"rest": true, "lose_days": 1},
+        "failure": {"lose_days": 2, "injury": "exhaustion"}
+      }
+    ]
+  },
+  {
+    "id": "broken_bridge",
+    "name": "Collapsed Bridge",
+    "description": "An old bridge has collapsed. You must find another way.",
+    "choices": [
+      {
+        "id": "repair_bridge",
+        "name": "Repair Bridge",
+        "requires": {"traits": ["mechanically_gifted"], "items": {"metal_scrap": 10, "bolts": 5}},
+        "success_chance": 0.7,
+        "success": {"lose_items": {"metal_scrap": 10, "bolts": 5}, "reputation_gain": 3},
+        "failure": {"lose_items": {"metal_scrap": 5, "bolts": 2}, "lose_days": 1}
+      },
+      {
+        "id": "ford_river",
+        "name": "Ford the River",
+        "requires": {"traits": ["strong"]},
+        "success_chance": 0.8,
+        "success": {"lose_days": 1, "injury": "exhaustion"},
+        "failure": {"injury": "exhaustion", "lose_items": {"provisions": 2}}
+      },
+      {
+        "id": "detour",
+        "name": "Take Detour",
+        "requires": {},
+        "success_chance": 1.0,
+        "success": {"lose_days": 3},
+        "failure": {}
+      }
+    ]
+  },
+  {
+    "id": "wounded_traveler",
+    "name": "Wounded Traveler",
+    "description": "You find an injured stranger by the road.",
+    "choices": [
+      {
+        "id": "help",
+        "name": "Help Them",
+        "requires": {"items": {"healing_herbs": 1}},
+        "success_chance": 1.0,
+        "success": {"lose_items": {"healing_herbs": 1}, "reputation_gain": 5, "gain_items": {"travel_maps": 1}},
+        "failure": {}
+      },
+      {
+        "id": "ignore",
+        "name": "Ignore Them",
+        "requires": {},
+        "success_chance": 1.0,
+        "success": {},
+        "failure": {}
+      },
+      {
+        "id": "rob",
+        "name": "Rob Them",
+        "requires": {"traits": ["strong"]},
+        "success_chance": 0.9,
+        "success": {"gain_items": {"metal_scrap": 5}, "reputation_loss": 10},
+        "failure": {"reputation_loss": 5}
+      }
+    ]
+  }
+]
+

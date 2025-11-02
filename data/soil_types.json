@@ -1,0 +1,43 @@
+[
+  {
+    "name": "ferro_soil",
+    "display_name": "Ferro Soil",
+    "machine_affinity_base": 0.7,
+    "nature_affinity_base": 0.3,
+    "description": "Soil rich with metal fragments and mechanical residue. Favors biomechanical crops.",
+    "color": "#8B7355"
+  },
+  {
+    "name": "fungal_soil",
+    "display_name": "Fungal Soil",
+    "machine_affinity_base": 0.2,
+    "nature_affinity_base": 0.8,
+    "description": "Soft, organic soil with mycelial networks. Favors biological growth.",
+    "color": "#6B4E3D"
+  },
+  {
+    "name": "ash_soil",
+    "display_name": "Ash Soil",
+    "machine_affinity_base": 0.5,
+    "nature_affinity_base": 0.5,
+    "description": "Neutral ground of burnt remains. Accepts both machine and nature.",
+    "color": "#5A5A5A"
+  },
+  {
+    "name": "pure_bio_soil",
+    "display_name": "Pure Bio Soil",
+    "machine_affinity_base": 0.1,
+    "nature_affinity_base": 0.9,
+    "description": "Rare untainted earth. Rejects mechanical influence.",
+    "color": "#4A6B2E"
+  },
+  {
+    "name": "scrap_heap",
+    "display_name": "Scrap Heap",
+    "machine_affinity_base": 0.9,
+    "nature_affinity_base": 0.1,
+    "description": "Piles of broken machinery. Only the hardiest biomechanical plants thrive.",
+    "color": "#7A5A4A"
+  }
+]
+

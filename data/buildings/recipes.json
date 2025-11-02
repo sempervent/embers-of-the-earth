@@ -1,0 +1,67 @@
+[
+  {
+    "building": "boiler",
+    "name": "Steam Generation",
+    "in": {
+      "steamroot": 5,
+      "fuel": 2
+    },
+    "out": {
+      "steam": 8
+    },
+    "time": 1,
+    "description": "Converts steamroot and fuel into steam energy"
+  },
+  {
+    "building": "mill",
+    "name": "Grain Milling",
+    "in": {
+      "ironwheat": 10
+    },
+    "out": {
+      "bolts": 4,
+      "grain": 6
+    },
+    "time": 1,
+    "description": "Processes ironwheat into bolts and grain"
+  },
+  {
+    "building": "condenser",
+    "name": "Steam Condensation",
+    "in": {
+      "steam": 10
+    },
+    "out": {
+      "steam_crystal": 5,
+      "water": 3
+    },
+    "time": 2,
+    "description": "Condenses steam into crystals and water"
+  },
+  {
+    "building": "forge",
+    "name": "Metal Forging",
+    "in": {
+      "metal_scrap": 8,
+      "fuel": 3
+    },
+    "out": {
+      "bolts": 6,
+      "gear_scrap": 2
+    },
+    "time": 1,
+    "description": "Forges metal scrap into bolts and gears"
+  },
+  {
+    "building": "autoharvester",
+    "name": "Auto Harvest",
+    "in": {
+      "steam": 5
+    },
+    "out": {},
+    "time": 0,
+    "description": "Automatically harvests mature crops",
+    "passive": true
+  }
+]
+

@@ -1,23 +1,36 @@
-.PHONY: docs dev check commit install-hooks version changelog
+# Makefile for Embers of the Earth
 
-docs:
-	mkdocs build --strict
+.PHONY: help build test sim profile clean
 
-dev:
-	mkdocs serve -a 0.0.0.0:8000
+help:
+	@echo "Available targets:"
+	@echo "  make build     - Build the project"
+	@echo "  make test      - Run tests"
+	@echo "  make sim       - Run balance simulator"
+	@echo "  make profile   - Profile the game"
+	@echo "  make clean     - Clean build artifacts"
 
-check:
-	pre-commit run --all-files
+build:
+	@echo "Building project..."
+	@mkdir -p builds
+	# Godot export would go here
 
-install-hooks:
-	pre-commit install --hook-type pre-commit --hook-type commit-msg
+test:
+	@echo "Running tests..."
+	@python tools/sim/balance_simulator.py
 
-commit:
-	cz commit
+sim:
+	@echo "Running balance simulations..."
+	@python tools/sim/balance_simulator.py
 
-version:
-	cz bump --check-consistency
+profile:
+	@echo "Profiling game..."
+	@mkdir -p reports
+	# Godot profiler would be called here
+	@echo "Profile data saved to reports/"
 
-changelog:
-	cz changelog
-
+clean:
+	@echo "Cleaning build artifacts..."
+	@rm -rf builds/
+	@rm -rf reports/
+	@rm -rf .godot/

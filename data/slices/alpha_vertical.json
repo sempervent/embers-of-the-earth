@@ -1,0 +1,35 @@
+{
+  "name": "Alpha Vertical Slice",
+  "description": "A 30-40 minute contained experience showcasing core systems",
+  "duration_minutes": 30,
+  "content": {
+    "regions": ["home_farm", "brassford", "ash_caravan"],
+    "crops": ["Ironwheat", "Steamroot", "Cogbean", "Rustmoss", "Steamroot", "Ironwheat"],
+    "buildings": ["boiler", "mill", "condenser"],
+    "factions": ["machinists", "ash_caravans"],
+    "max_marriages": 1,
+    "entropy_tier": 1
+  },
+  "modifiers": {
+    "crop_growth_multiplier": 0.5,
+    "encounter_rate": 0.3,
+    "starting_items": {
+      "ironwheat_seed": 10,
+      "food": 5,
+      "fuel": 3,
+      "coins": 50
+    },
+    "entropy_acceleration": 2.0
+  },
+  "win_conditions": {
+    "harvest_crops": 5,
+    "trade_completed": 3,
+    "building_placed": 1,
+    "entropy_event_triggered": true
+  },
+  "end_sequence": {
+    "show_credits": true,
+    "message": "The vertical slice ends here. The full game awaits."
+  }
+}
+

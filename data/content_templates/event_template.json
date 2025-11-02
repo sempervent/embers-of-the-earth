@@ -1,0 +1,47 @@
+{
+  "id": "event_unique_id",
+  "name": "Event Name",
+  "description": "What happens in the world when this event triggers.",
+  "trigger_conditions": {
+    "min_year": 5,
+    "settlement_type": "any",
+    "chance_per_year": 0.1,
+    "requires_entropy": "order",
+    "entropy_threshold": 30,
+    "generation": 3,
+    "requires_travel": true,
+    "chance_per_travel": 0.15
+  },
+  "effects": {
+    "settlement": "random",
+    "price_multiplier": 1.5,
+    "stock_reduction": 0.3,
+    "spawn_refugees": true,
+    "refugee_count": 3,
+    "faction": "random",
+    "void_contracts": true,
+    "lose_heirloom": true,
+    "heirloom_type": "seed",
+    "transform_soil": "ferro_soil",
+    "spawn_steam_vents": 3,
+    "crop_damage": 20,
+    "building_damage": 30,
+    "player_reputation_loss": 10
+  },
+  "rumors": [
+    "Rumor template with {placeholders}",
+    "Multiple rumor templates",
+    "Context-aware rumors"
+  ],
+  "journal_entries": [
+    "Journal entry template",
+    "Player perspective",
+    "Emotional weight"
+  ],
+  "lore": {
+    "significance": "Why this event matters in the world",
+    "historical_precedent": "Has this happened before?",
+    "consequences": "Long-term effects"
+  }
+}
+

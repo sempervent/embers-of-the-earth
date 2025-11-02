@@ -1,0 +1,35 @@
+{
+  "id": "npc_unique_id",
+  "name": "NPC Name",
+  "faction": "machinists",
+  "settlement": "brassford",
+  "role": "elder",
+  "age": 67,
+  "description": "A detailed description of the NPC's appearance and history.",
+  "personality": {
+    "traits": ["skeptical", "wise", "grumpy"],
+    "opinion_base": 0
+  },
+  "schedule": {
+    "morning": "tavern",
+    "noon": "market",
+    "evening": "home"
+  },
+  "quotes": {
+    "neutral": ["Quote 1", "Quote 2", "Quote 3"],
+    "positive": ["Positive quote when opinion > 20"],
+    "negative": ["Negative quote when opinion < -20"],
+    "rumor": ["Quote when spreading rumors"]
+  },
+  "memory_events": ["specific_event_id"],
+  "lore": {
+    "backstory": "Where they came from, what they've seen",
+    "connection_to_player": "Any family connections or history",
+    "secrets": "Hidden knowledge they might reveal"
+  },
+  "relationships": {
+    "related_npcs": ["npc_id_1", "npc_id_2"],
+    "faction_role": "elder"
+  }
+}
+

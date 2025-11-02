@@ -1,0 +1,69 @@
+[
+  {
+    "id": "first_farmer_letter",
+    "name": "The First Farmer's Letter",
+    "description": "A soil-stained letter from the first Coalroot farmer. The ink has faded, but the words remain.",
+    "text": "To whoever reads this: The earth remembers. Every seed planted, every harvest taken. The machine-god sleeps beneath, but the soil holds our history. Tend it well. —Elias Coalroot, Year 1",
+    "generation_acquired": 1,
+    "effects": {
+      "soil_knowledge": 2,
+      "farming_bonus": 1
+    },
+    "lost_event": "bandit_heirloom_theft"
+  },
+  {
+    "id": "cracked_music_locket",
+    "name": "Cracked Music Locket",
+    "description": "A tarnished brass locket that plays your great-grandfather's melody when opened. The gears are rusted but still turn.",
+    "generation_acquired": 1,
+    "effects": {
+      "memory_music": true,
+      "family_bond": 2
+    },
+    "special": "Plays ancestral theme when opened"
+  },
+  {
+    "id": "heirloom_seeds",
+    "name": "Heirloom Seeds",
+    "description": "Pure seeds saved from before the fall. The last untainted genetics.",
+    "generation_acquired": 1,
+    "effects": {
+      "crop_yield_bonus": 0.15,
+      "soil_memory_preservation": true
+    },
+    "lost_event": "bandit_heirloom_theft",
+    "stackable": true
+  },
+  {
+    "id": "grandfathers_contract",
+    "name": "Grandfather's Broken Contract",
+    "description": "The torn contract that broke a faction's trust. A stain on the bloodline.",
+    "generation_acquired": 3,
+    "effects": {
+      "faction_penalty": -15,
+      "shame": true
+    },
+    "special": "Causes NPCs to remember broken promises"
+  },
+  {
+    "id": "machine_blueprint_scarred",
+    "name": "Scarred Machine Blueprint",
+    "description": "A blueprint covered in blood stains and scorch marks. The last project before the accident.",
+    "generation_acquired": 2,
+    "effects": {
+      "crafting_bonus": 3,
+      "machine_affinity": 5
+    }
+  },
+  {
+    "id": "root_keeper_seal",
+    "name": "Root Keeper's Seal",
+    "description": "A wooden seal carved with living vines. Grants access to hidden groves.",
+    "generation_acquired": 2,
+    "effects": {
+      "faction_access": ["root_keepers"],
+      "nature_affinity": 3
+    }
+  }
+]
+

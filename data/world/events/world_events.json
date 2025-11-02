@@ -1,0 +1,157 @@
+[
+  {
+    "id": "settlement_burns",
+    "name": "Settlement Burns",
+    "description": "A devastating fire consumes part of a settlement.",
+    "trigger_conditions": {
+      "min_year": 5,
+      "settlement_type": "any",
+      "chance_per_year": 0.1
+    },
+    "effects": {
+      "settlement": "random",
+      "price_multiplier": 1.5,
+      "stock_reduction": 0.3,
+      "spawn_refugees": true,
+      "refugee_count": 3
+    },
+    "rumors": [
+      "{settlement} burned. They say it was the machine-god's anger.",
+      "The fire at {settlement} left nothing but ash and steel.",
+      "Refugees from {settlement} speak of fire and screams."
+    ],
+    "journal_entries": [
+      "News reaches the farm: {settlement} has burned. Prices will spike.",
+      "Refugees arrive, telling of a great fire at {settlement}.",
+      "The smoke from {settlement} can be seen for miles."
+    ]
+  },
+  {
+    "id": "faction_collapse",
+    "name": "Faction Collapse",
+    "description": "A faction's influence crumbles, voiding contracts.",
+    "trigger_conditions": {
+      "min_year": 10,
+      "faction_type": "any",
+      "chance_per_year": 0.05
+    },
+    "effects": {
+      "faction": "random",
+      "void_contracts": true,
+      "settlement_change": true,
+      "reputation_wipe": true
+    },
+    "rumors": [
+      "The {faction} have collapsed. All contracts are void.",
+      "Heard the {faction} were disbanded. Marriages don't mean what they used to.",
+      "{faction} is no more. Their settlements have new masters."
+    ],
+    "journal_entries": [
+      "The {faction} have fallen. Our marriage contract is void.",
+      "News of the {faction}'s collapse reaches the farm. Everything changes.",
+      "The bloodline's ties to {faction} mean nothing now."
+    ]
+  },
+  {
+    "id": "bandit_heirloom_theft",
+    "name": "Heirloom Theft",
+    "description": "Bandits steal heirloom seeds during a trade caravan attack.",
+    "trigger_conditions": {
+      "requires_travel": true,
+      "chance_per_travel": 0.15
+    },
+    "effects": {
+      "lose_heirloom": true,
+      "heirloom_type": "seed",
+      "spawn_rumor": true,
+      "player_reputation_loss": 10
+    },
+    "rumors": [
+      "Bandits stole the Coalroot heirloom seeds. Some say it's karma.",
+      "Heard the Coalroots lost something precious to bandits. Serves them right.",
+      "The heirloom seeds are gone. Taken by bandits wearing gear-masks."
+    ],
+    "journal_entries": [
+      "Bandits attacked the caravan. They took the heirloom seeds. Everything the first farmer saved—gone.",
+      "The heirloom seeds are lost. Our family's history stolen by scavengers.",
+      "We've lost what cannot be replaced. The bandits knew what they were taking."
+    ]
+  },
+  {
+    "id": "machine_awakening_prophet",
+    "name": "Machine Prophet Emerges",
+    "description": "A prophet claims the machine-god is awakening.",
+    "trigger_conditions": {
+      "requires_entropy": "order",
+      "entropy_threshold": 30,
+      "chance_per_year": 0.2
+    },
+    "effects": {
+      "spawn_npc": "machine_prophet",
+      "faction_split": true,
+      "new_settlement": "machine_temple"
+    },
+    "rumors": [
+      "A prophet speaks of the machine-god's return. Followers gather.",
+      "They say the machine beneath the earth is stirring. A new prophet leads the faithful.",
+      "The machine-god's voice is heard again. Those who listened are changed."
+    ],
+    "journal_entries": [
+      "A prophet has emerged, speaking of the machine-god. Some believe. Others fear.",
+      "The prophet's words spread. The machine beneath stirs. Coincidence?",
+      "They say the machine-god speaks through the prophet. The faithful build a temple."
+    ]
+  },
+  {
+    "id": "wild_reclamation_event",
+    "name": "Wild Reclamation",
+    "description": "Nature violently reclaims a settlement.",
+    "trigger_conditions": {
+      "requires_entropy": "wild",
+      "entropy_threshold": 40,
+      "chance_per_year": 0.15
+    },
+    "effects": {
+      "settlement": "random",
+      "transform_soil": "pure_bio_soil",
+      "destroy_buildings": true,
+      "spawn_fungal_growth": true
+    },
+    "rumors": [
+      "Nature took back {settlement}. Vines and roots consume everything.",
+      "The wild has reclaimed {settlement}. Nothing mechanical remains.",
+      "They say the earth itself rose up against {settlement}. Pure biology triumphs."
+    ],
+    "journal_entries": [
+      "News of {settlement}'s fall reaches the farm. Nature reclaimed what was taken.",
+      "The wild has won at {settlement}. Machines rust. Life grows.",
+      "Reports speak of {settlement} consumed by vines and roots. The wild remembers."
+    ]
+  },
+  {
+    "id": "grandfather_contract_break",
+    "name": "Grandfather's Broken Contract",
+    "description": "A memory surfaces of a broken contract from past generations.",
+    "trigger_conditions": {
+      "generation": 3,
+      "chance_per_year": 0.3
+    },
+    "effects": {
+      "memory_event": true,
+      "faction_reputation_loss": 15,
+      "spawn_rumor": true,
+      "family_shame": true
+    },
+    "rumors": [
+      "The Coalroots broke a contract with {faction} generations ago. Shame doesn't fade.",
+      "Old Mara remembers when the Coalroots betrayed the {faction}. Some things aren't forgotten.",
+      "Your grandfather's broken oath still haunts the family name."
+    ],
+    "journal_entries": [
+      "Old letters surface. Grandfather broke a contract with {faction}. The shame is ours now.",
+      "The past returns. A broken contract from grandfather's time stains the bloodline.",
+      "They remember. The {faction} remember what grandfather did. And they haven't forgotten."
+    ]
+  }
+]
+

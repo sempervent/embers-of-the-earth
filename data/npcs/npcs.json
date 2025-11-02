@@ -1,0 +1,142 @@
+[
+  {
+    "id": "mara_brassford",
+    "name": "Old Mara",
+    "faction": "machinists",
+    "settlement": "brassford",
+    "role": "elder",
+    "age": 67,
+    "description": "A grizzled elder who remembers when the Brass Guild first settled here.",
+    "personality": {
+      "traits": ["skeptical", "wise", "grumpy"],
+      "opinion_base": 0
+    },
+    "schedule": {
+      "morning": "tavern",
+      "noon": "market",
+      "evening": "home"
+    },
+    "quotes": {
+      "neutral": ["Nothing good grows from iron wombs.", "The old ways are dying.", "Your grandfather knew better than to trust machines."],
+      "positive": ["Your bloodline shows promise.", "The earth remembers your family's honor."],
+      "negative": ["I remember when your kin broke the contract.", "Iron can't replace blood."]
+    },
+    "memory_events": ["coalroot_marriage_brass_guild", "traded_daughter"]
+  },
+  {
+    "id": "thaddeus_brassford",
+    "name": "Thaddeus Forgehand",
+    "faction": "machinists",
+    "settlement": "brassford",
+    "role": "blacksmith",
+    "age": 42,
+    "description": "Master smith of the Brass Guild. His hands are permanently stained with metal.",
+    "personality": {
+      "traits": ["proud", "mechanically_gifted", "loyal"],
+      "opinion_base": 10
+    },
+    "schedule": {
+      "morning": "forge",
+      "noon": "forge",
+      "evening": "tavern"
+    },
+    "quotes": {
+      "neutral": ["Steel endures where flesh fails.", "Show me your metal, and I'll show you your worth."],
+      "positive": ["Your family knows the value of good steel.", "A Coalroot contract is one worth keeping."],
+      "negative": ["Trust broken once is trust broken forever.", "Your ancestors left a stain on that name."]
+    }
+  },
+  {
+    "id": "elysium_ash_caravan",
+    "name": "Elysium Wander",
+    "faction": "ash_caravans",
+    "settlement": "ash_caravan",
+    "role": "merchant",
+    "age": 38,
+    "description": "Nomadic trader who moves between settlements. Knows every secret road.",
+    "personality": {
+      "traits": ["diplomatic", "wanderer", "cautious"],
+      "opinion_base": 5
+    },
+    "schedule": {
+      "morning": "caravan",
+      "noon": "market",
+      "evening": "camp"
+    },
+    "quotes": {
+      "neutral": ["Rumors travel faster than caravans.", "I've heard things about your bloodline."],
+      "positive": ["Your family has always been fair traders.", "The roads remember your ancestors kindly."],
+      "negative": ["Your name carries weight—and not all of it good.", "Some say your kin brought the bandits."]
+    }
+  },
+  {
+    "id": "root_keeper_elara",
+    "name": "Elara Greenthumb",
+    "faction": "root_keepers",
+    "settlement": "root_keepers",
+    "role": "elder",
+    "age": 74,
+    "description": "Keeper of the oldest biological knowledge. Her eyes see the past in every leaf.",
+    "personality": {
+      "traits": ["wise", "green_thumb", "mystical"],
+      "opinion_base": -5
+    },
+    "schedule": {
+      "morning": "grove",
+      "noon": "grove",
+      "evening": "library"
+    },
+    "quotes": {
+      "neutral": ["The earth whispers its secrets to those who listen.", "Machine-wheat can't replace true grain."],
+      "positive": ["Your family respects the old ways.", "Nature remembers your bloodline's care."],
+      "negative": ["Too much iron in the soil. Too much machine in the blood.", "Your ancestors chose metal over life."]
+    }
+  },
+  {
+    "id": "captain_rustgate",
+    "name": "Captain Ironwill",
+    "faction": "rusted_brotherhood",
+    "settlement": "rust_gate",
+    "role": "commander",
+    "age": 55,
+    "description": "Military commander of Rust Gate. His honor is unbreakable—but his memory is long.",
+    "personality": {
+      "traits": ["loyal", "strong", "vengeful"],
+      "opinion_base": 0
+    },
+    "schedule": {
+      "morning": "barracks",
+      "noon": "barracks",
+      "evening": "barracks"
+    },
+    "quotes": {
+      "neutral": ["Honor is earned, not inherited.", "Your bloodline's past actions determine your present welcome."],
+      "positive": ["A Coalroot oath is one I can trust.", "Your family has proven its loyalty."],
+      "negative": ["Your grandfather broke a contract with the Brotherhood. That debt is yours now.", "Trust is not easily regained."]
+    }
+  },
+  {
+    "id": "rumor_monger_tav",
+    "name": "Tav the Tale-Teller",
+    "faction": "neutral",
+    "settlement": "brassford",
+    "role": "storyteller",
+    "age": 31,
+    "description": "Wanderer who collects and spreads stories. Knows every rumor in the wasteland.",
+    "personality": {
+      "traits": ["gossipy", "charismatic", "unreliable"],
+      "opinion_base": 0
+    },
+    "schedule": {
+      "morning": "tavern",
+      "noon": "market",
+      "evening": "tavern"
+    },
+    "quotes": {
+      "neutral": ["I hear things. Interesting things.", "Word on the road says...", "Have you heard about...?"],
+      "positive": ["Your family's reputation precedes you—in a good way.", "The stories about your bloodline are honorable."],
+      "negative": ["The whispers aren't kind about your kin.", "People talk. And they're not saying nice things."]
+    }
+  }
+]
+

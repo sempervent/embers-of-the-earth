@@ -1,0 +1,89 @@
+[
+  {
+    "faction": "machinists",
+    "dowry": {
+      "items": {
+        "gear_blueprint": 1
+      }
+    },
+    "obligations": {
+      "tribute": {
+        "ironwheat": 50
+      },
+      "apprenticeship_years": 10
+    },
+    "benefits": {
+      "tech": ["auto_harvester"],
+      "reputation": {
+        "machinists": 25
+      }
+    },
+    "description": "Marriage into the Brass Guild grants access to advanced machinery."
+  },
+  {
+    "faction": "root_keepers",
+    "dowry": {
+      "items": {
+        "organic_fertilizer": 10
+      }
+    },
+    "obligations": {
+      "tribute": {
+        "healing_herbs": 20
+      },
+      "land_donation": 5
+    },
+    "benefits": {
+      "seeds": ["pure_bio_seeds"],
+      "knowledge": ["soil_preservation"],
+      "reputation": {
+        "root_keepers": 30
+      }
+    },
+    "description": "Alliance with Root Keepers brings knowledge of pure soil."
+  },
+  {
+    "faction": "rusted_brotherhood",
+    "dowry": {
+      "items": {
+        "weapons": 3,
+        "armor": 2
+      }
+    },
+    "obligations": {
+      "tribute": {
+        "metal_scrap": 100
+      },
+      "military_service": 5
+    },
+    "benefits": {
+      "security": ["farm_protection"],
+      "reputation": {
+        "rusted_brotherhood": 30
+      }
+    },
+    "description": "Marriage to the Rusted Brotherhood provides protection."
+  },
+  {
+    "faction": "ash_caravans",
+    "dowry": {
+      "items": {
+        "travel_maps": 2
+      }
+    },
+    "obligations": {
+      "tribute": {
+        "provisions": 30
+      },
+      "trade_routes": true
+    },
+    "benefits": {
+      "trade": ["discounted_goods", "trade_routes"],
+      "reputation": {
+        "ash_caravans": 20
+      }
+    },
+    "description": "Alliance with Ash Caravans opens trade networks."
+  }
+]
+

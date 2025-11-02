@@ -1,0 +1,75 @@
+[
+  {
+    "name": "stubborn",
+    "description": "Refuses to give up easily",
+    "stat_modifiers": {
+      "resilience": 2,
+      "diplomacy": -1
+    }
+  },
+  {
+    "name": "mechanically_gifted",
+    "description": "Natural aptitude for machines",
+    "stat_modifiers": {
+      "crafting": 3,
+      "repair": 2
+    }
+  },
+  {
+    "name": "green_thumb",
+    "description": "Exceptional crop yields",
+    "stat_modifiers": {
+      "farming": 3,
+      "soil_knowledge": 2
+    }
+  },
+  {
+    "name": "inventive",
+    "description": "Creates new solutions",
+    "stat_modifiers": {
+      "innovation": 3,
+      "crafting": 1
+    }
+  },
+  {
+    "name": "wise",
+    "description": "Learns from the past",
+    "stat_modifiers": {
+      "diplomacy": 2,
+      "soil_knowledge": 2
+    }
+  },
+  {
+    "name": "wanderer",
+    "description": "Travels safely and efficiently",
+    "stat_modifiers": {
+      "travel": 3,
+      "survival": 2
+    }
+  },
+  {
+    "name": "diplomatic",
+    "description": "Builds relationships easily",
+    "stat_modifiers": {
+      "diplomacy": 3,
+      "reputation_gain": 1
+    }
+  },
+  {
+    "name": "strong",
+    "description": "Physical prowess and endurance",
+    "stat_modifiers": {
+      "strength": 3,
+      "resilience": 2
+    }
+  },
+  {
+    "name": "loyal",
+    "description": "Maintains alliances",
+    "stat_modifiers": {
+      "diplomacy": 2,
+      "faction_relations": 1
+    }
+  }
+]
+

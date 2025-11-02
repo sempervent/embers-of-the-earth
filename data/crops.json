@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Ironwheat",
+    "growth_stages": 5,
+    "requires": ["iron", "water", "sunlight"],
+    "output": ["grain", "metal_scrap"],
+    "likes": ["ferro_soil"],
+    "hates": ["pure_bio_soil"],
+    "days_per_stage": 3,
+    "biomechanical": true,
+    "description": "A hardy crop that yields both sustenance and salvageable metal."
+  },
+  {
+    "name": "Steamroot",
+    "growth_stages": 4,
+    "requires": ["water", "heat"],
+    "output": ["root_vegetable", "steam_crystal"],
+    "likes": ["ferro_soil", "ash_soil"],
+    "hates": ["fungal_soil"],
+    "days_per_stage": 4,
+    "biomechanical": true,
+    "description": "Generates internal steam pressure as it grows."
+  },
+  {
+    "name": "Cogbean",
+    "growth_stages": 3,
+    "requires": ["iron", "mechanical_parts"],
+    "output": ["bean", "gear_scrap"],
+    "likes": ["ferro_soil"],
+    "hates": ["pure_bio_soil", "ash_soil"],
+    "days_per_stage": 2,
+    "biomechanical": true,
+    "description": "Grows in spiral patterns resembling clockwork."
+  },
+  {
+    "name": "Rustmoss",
+    "growth_stages": 6,
+    "requires": ["moisture", "metal"],
+    "output": ["moss", "rust_powder"],
+    "likes": ["fungal_soil", "ferro_soil"],
+    "hates": ["pure_bio_soil"],
+    "days_per_stage": 5,
+    "biomechanical": false,
+    "description": "A slow-growing organism that consumes oxidized metal."
+  }
+]
+

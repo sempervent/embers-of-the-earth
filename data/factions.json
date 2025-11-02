@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Brass Guild of Machinists",
+    "display_name": "Brass Guild",
+    "offers": ["steam_prosthetics", "gear_blueprints", "mechanical_parts"],
+    "requires": ["ironwheat_tribute", "marriage_alliance"],
+    "marriage_benefits": {
+      "traits": ["mechanically_gifted", "inventive"],
+      "dowry": ["gear_blueprints", "metal_scrap"]
+    },
+    "reputation_needed": 30,
+    "description": "Master craftspeople who prize precision and metalwork."
+  },
+  {
+    "name": "Root Keepers",
+    "display_name": "Root Keepers",
+    "offers": ["bio_seeds", "healing_herbs", "organic_fertilizer"],
+    "requires": ["harvest_tribute", "marriage_alliance"],
+    "marriage_benefits": {
+      "traits": ["green_thumb", "wise"],
+      "dowry": ["rare_seeds", "soil_nutrients"]
+    },
+    "reputation_needed": 25,
+    "description": "Guardians of the last pure soil and biological knowledge."
+  },
+  {
+    "name": "Ash Caravans",
+    "display_name": "Ash Caravans",
+    "offers": ["trade_goods", "travel_provisions", "scouts"],
+    "requires": ["protection_payment", "marriage_alliance"],
+    "marriage_benefits": {
+      "traits": ["wanderer", "diplomatic"],
+      "dowry": ["travel_maps", "provisions"]
+    },
+    "reputation_needed": 20,
+    "description": "Nomadic traders who survive through mobility and connections."
+  },
+  {
+    "name": "The Rusted Brotherhood",
+    "display_name": "Rusted Brotherhood",
+    "offers": ["security", "military_gear", "territory_protection"],
+    "requires": ["loyalty_oath", "marriage_alliance"],
+    "marriage_benefits": {
+      "traits": ["strong", "loyal"],
+      "dowry": ["weapons", "armor"]
+    },
+    "reputation_needed": 40,
+    "description": "A martial faction that values strength and honor above all."
+  }
+]
+

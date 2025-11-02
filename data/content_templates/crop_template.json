@@ -1,0 +1,22 @@
+{
+  "name": "NEW_CROP_NAME",
+  "growth_stages": 5,
+  "requires": ["iron", "water", "sunlight"],
+  "output": ["grain", "metal_scrap"],
+  "likes": ["ferro_soil"],
+  "hates": ["pure_bio_soil"],
+  "days_per_stage": 3,
+  "biomechanical": true,
+  "description": "A hardy crop that yields both sustenance and salvageable metal.",
+  "lore": {
+    "origin": "Created by the Brass Guild in Year X",
+    "first_harvested_by": "Elias Coalroot",
+    "legend": "They say this crop remembers the machines that made it."
+  },
+  "visual": {
+    "sprite_base": "wheat",
+    "mutations": ["rust_veins", "gear_leaves"],
+    "color_palette": "copper"
+  }
+}
+

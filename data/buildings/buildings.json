@@ -1,0 +1,65 @@
+[
+  {
+    "id": "boiler",
+    "name": "Steam Boiler",
+    "description": "Generates steam from fuel and crops",
+    "cost": {
+      "metal_scrap": 20,
+      "gear_scrap": 10,
+      "bolts": 5
+    },
+    "size": {"width": 2, "height": 2},
+    "recipes": ["steam_generation"]
+  },
+  {
+    "id": "mill",
+    "name": "Grain Mill",
+    "description": "Processes crops into refined goods",
+    "cost": {
+      "metal_scrap": 15,
+      "gear_scrap": 8,
+      "bolts": 8
+    },
+    "size": {"width": 2, "height": 2},
+    "recipes": ["grain_milling"]
+  },
+  {
+    "id": "condenser",
+    "name": "Steam Condenser",
+    "description": "Condenses steam into crystals",
+    "cost": {
+      "metal_scrap": 25,
+      "gear_scrap": 15,
+      "bolts": 10
+    },
+    "size": {"width": 1, "height": 2},
+    "recipes": ["steam_condensation"]
+  },
+  {
+    "id": "forge",
+    "name": "Metal Forge",
+    "description": "Forges metal into tools and parts",
+    "cost": {
+      "metal_scrap": 30,
+      "gear_scrap": 20,
+      "bolts": 15
+    },
+    "size": {"width": 2, "height": 2},
+    "recipes": ["metal_forging"]
+  },
+  {
+    "id": "autoharvester",
+    "name": "Auto Harvester",
+    "description": "Automatically harvests mature crops",
+    "cost": {
+      "gear_blueprint": 1,
+      "metal_scrap": 40,
+      "gear_scrap": 25,
+      "bolts": 20
+    },
+    "size": {"width": 3, "height": 3},
+    "recipes": ["auto_harvest"],
+    "requires_tech": ["auto_harvester"]
+  }
+]
+
