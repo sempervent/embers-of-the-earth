@@ -40,7 +40,7 @@ jobs:
           preset-name: 'Desktop'
       
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: build-${{ matrix.platform }}
           path: |
@@ -66,7 +66,7 @@ jobs:
           python tools/sim/balance_simulator.py
       
       - name: Upload Simulation Reports
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: simulation-reports
           path: reports/*.csv
