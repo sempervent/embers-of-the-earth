@@ -43,7 +43,7 @@ jobs:
           zip -r ../../embers-v${{ github.ref_name }}-${{ matrix.platform }}.zip .
       
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: embers-v${{ github.ref_name }}-${{ matrix.platform }}
           path: embers-v${{ github.ref_name }}-${{ matrix.platform }}.zip
